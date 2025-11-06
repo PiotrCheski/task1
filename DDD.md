@@ -15,32 +15,38 @@ Celem zadania było zamodelowanie fragmentu bezpiecznej aplikacji bankowej wykor
 | **Przelewy**     | Realizacja operacji wysyłania i odbierania przelewów przez klientów banku.                    |
 | **Obligacje**    | Realizacja operacji dotyczących zakupu i zarządzania obligacjami przez klientów banku.        |
 
+---
 
 Agregaty
-- WyświetlKontoBankowe
-- ZlećPrzlew
-- KupObligacje 
+- **WyświetlKontoBankowe**  
+- **ZlećPrzelew**  
+- **KupObligacje**  
+
+---
 
 Encje i ich atrybuty
-- Klient
-    NumerIDKlienta
-    NumerKontaKlienta
-    ImięKlienta
-    NazwiskoKlienta
-- Przlew
-    NumerID
-    NumerKontaNadawcy
-    NumerKontaOdbiorcy
-- Obligacje
-    NumerID
-    CenaObligacji
-    TerminWykupu
+- **Klient**  
+  - NumerIDKlienta  
+  - NumerKontaKlienta  
+  - ImięKlienta  
+  - NazwiskoKlienta  
+- **Przlew**  
+  - NumerID  
+  - NumerKontaNadawcy  
+  - NumerKontaOdbiorcy  
+- **Obligacje**  
+  - NumerID  
+  - CenaObligacji  
+  - TerminWykupu  
+
+---
 
 Obiekty Wartości
-- StanKontaKlienta
-- StanKontaKlientaDoPrzelewu
-- StanKontaKlientaDoZakupuObligacji
-- KwotaWychodzacegoPrzelewu
-- LiczbaKupowanychObligacji
+- **StanKontaKlienta**  
+- **StanKontaKlientaDoPrzelewu**  
+- **StanKontaKlientaDoZakupuObligacji**  
+- **KwotaWychodzacegoPrzelewu**  
+- **LiczbaKupowanychObligacji**  
+
 
 W modelu zakładam, że informacja o stanie konta będzie występowała w każdym z trzech kontekstów. Jednocześnie w każdym z nich będzie ona reprezentowana przez inny obiekt wartości, ponieważ w przypadku StanKontaKlienta chodzi o informację ile pieniędzy ma klient na koncie wyłącznie w celu informacyjnym w obszarze kontekstu KontoBankowe. Jednocześnie StanKontaKlientaDoPrzelewu i StanKontaKlientaDoZakupuObligacji (odpowiednio w kontekście Przelewy i Obligacje) będą pozwalać realizować cele związane z np. weryfikacją, czy klient ma wystarczająco środków do zlecenia przelewu/zakupu obligacji.
