@@ -32,11 +32,11 @@ Celem zadania było zamodelowanie fragmentu bezpiecznej aplikacji bankowej wykor
   - ImięKlienta  
   - NazwiskoKlienta  
 - **Przlew**  
-  - NumerID  
+  - NumerIDPrzelewu
   - NumerKontaNadawcy  
   - NumerKontaOdbiorcy  
 - **Obligacje**  
-  - NumerID  
+  - NumerIDObligacji
   - CenaObligacji  
   - TerminWykupu  
 
