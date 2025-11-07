@@ -2,7 +2,7 @@ from project import db , app
 import re
 
 VALID_NAME_CUSTOMER = re.compile(r'^[A-Za-z0-9ĄąĆćĘęŁłŃńÓóŚśŹźŻż ]{1,100}$')
-VALID_NAME_BOOK = VALID_NAME_CUSTOMER
+VALID_NAME_BOOK = re.compile(r'^[A-Za-z0-9ĄąĆćĘęŁłŃńÓóŚśŹźŻż ]{1,100}$')
 # Loan model
 class Loan(db.Model):
     __tablename__ = 'Loans'
