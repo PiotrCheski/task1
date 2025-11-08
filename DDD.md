@@ -8,7 +8,7 @@ Celem zadania było zamodelowanie fragmentu bezpiecznej aplikacji bankowej wykor
 
 <img width="2231" height="1231" alt="DDD drawio" src="https://github.com/user-attachments/assets/2aab4a26-3c95-4d18-8ca9-9fc3569bff24" />
 
-4. **Opis części modelu i przyjęte założenia**
+3. **Opis części modelu i przyjęte założenia**
 
 | Bounded Context  | Opis                                                                                          |
 | ---------------- | --------------------------------------------------------------------------------------------- |
