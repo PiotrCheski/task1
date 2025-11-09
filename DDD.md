@@ -31,8 +31,8 @@ Celem zadania było zamodelowanie fragmentu bezpiecznej aplikacji bankowej wykor
 |------------|--------------|----------------|-----------------------|-----------------------|---------------|
 | **Klient** | NumerIDKlienta | INT | – | cyfry 0–9 | 42 |
 |  | NumerKontaKlienta | STRING | 26 znaków (NRB) | A–Z, 0–9 | PL61109010140000071219812874 |
-|  | ImięKlienta | STRING | max 30 znaków | A–Z, a–z, ąćęłńóśźż, spacja, myślnik | Jan |
-|  | NazwiskoKlienta | STRING | max 40 znaków | A–Z, a–z, ąćęłńóśźż, spacja, myślnik | Kowalski |
+|  | ImięKlienta | STRING | max 30 znaków | A–Z, a–z, ąćęłńóśźż, ĄĆĘŁŃÓŚŹŻ, spacja, myślnik | Jan |
+|  | NazwiskoKlienta | STRING | max 40 znaków | A–Z, a–z, ąćęłńóśźż, ĄĆĘŁŃÓŚŹŻ, spacja, myślnik | Kowalski |
 | **Przelew** | NumerIDPrzelewu | INT | – | cyfry 0–9 | 4242 |
 |  | NumerKontaNadawcy | STRING | 26 znaków (NRB) | A–Z, 0–9 | PL12109024025963568524326623 |
 |  | NumerKontaOdbiorcy | STRING | 26 znaków (NRB) | A–Z, 0–9 | PL14109024023977234567655981 |
