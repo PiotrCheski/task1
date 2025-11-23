@@ -127,6 +127,7 @@ Oceniany będzie przygotowany Pull Request.
 
 
 
+
 ## Credits
 * Java application - [GitHub Repo](https://github.com/pedrohenriquelacombe/spring-thymeleaf-crud-example)
 * Python application - [GitHub Repo](https://github.com/MohammadSatel/Flask_Book_Library)
